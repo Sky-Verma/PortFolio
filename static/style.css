@@ -17,47 +17,9 @@ nav{
   padding: 0px;
   line-height: 0px;
   display: none;
+z-index: 1;
+}
 
-}
-@keyframes hide{
-  0%{
-    
-    opacity: 1;
-    background: rgb(0,0,121);
-  box-shadow: 0px 5px 5px rgba(255,255,255,0.5);
-    line-height: auto;
-    height: 10vh;
-    display: flex;
-    padding: auto;
-    margin: auto;
-  }
-  75%{
-    background: rgb(0, 0, 121);
-  box-shadow: 0px 5px 5px rgba(255,255,255,0.5);
-    opacity: 1;
-    line-height: 0px;
-    height: 0px;
-    display: flex;
-    padding: 0px;
-    margin:auto;
-  }
-  100%{
-    opacity: 0;
-    display: none;
-    line-height: 0px;
-    height: 0px;
-    padding: 0px;
-    margin: auto;
-  }
-}
-.navbar-hidden{
-  animation-name:hide ;
-  animation-duration: 1s;
-animation-fill-mode: forwards;
-  margin-top: -10vh;
-  height: 10vh;
-  display: none;
-}
 @keyframes show{
   0%{
     opacity: 0;
@@ -67,26 +29,35 @@ animation-fill-mode: forwards;
     padding: 0px;
     margin: auto;
   }
-  75%{
+  25%{
     background: rgb(0, 0, 121);
-  box-shadow: 0px 5px 5px rgba(255,255,255,0.5);
-    opacity: 1;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
     line-height: 0px;
     height: 0px;
-    display: flex;
+    display: none;
     padding: 0px;
     margin:auto;
   }
   100%{
     opacity: 1;
     background: rgb(0,0,121);
-  box-shadow: 0px 5px 5px rgba(255,255,255,0.5);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     line-height: auto;
     height: 10vh;
     display: flex;
     padding: auto;
     margin: auto;
   }
+}
+.navbar-hidden{
+  animation-name:show ;
+  animation-duration: 1s;
+animation-fill-mode: backwards;
+  margin-top: -10vh;
+  height: 10vh;
+  animation-play-state: paused;
+  display: none;
 }
 .sticky{
   height: 10vh;
@@ -96,11 +67,11 @@ animation-fill-mode: forwards;
   background: transparent;
  animation-name: show;
  animation-duration: 1s;
- animation-fill-mode: ease;
+
   display: flex;
   
   background: rgb(0, 0, 121);
-  box-shadow: 0px 10px 10px rgba(255,255,255,0.5);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
   align-items: center;
@@ -110,12 +81,15 @@ align-items: center;
 display: flex;
 height: 100%;
 width: 70%;
+margin: auto;
 justify-content: space-around;
 align-items: center;
 list-style: none;
 }
 li{
   flex: 1;
+  color: white;
+  text-align: center;
 }
 section.home {
   background-image: url("./anastasia-nero-_WxmxTqlXw4-unsplash.jpg");
@@ -123,7 +97,7 @@ section.home {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
-  
+  overflow: hidden;
   width: 100%;
 }
 .profile-image {
@@ -139,8 +113,9 @@ section.home {
   height: 80%;
   width: auto;
   bottom: 0;
+  overflow: hidden;
   position: absolute;
-  left: 10%;
+  left:5%;
 }
 .name-txt {
   font-size: 60px;
@@ -162,7 +137,7 @@ button {
   right: 10%;
   top: 80%;
   height: 40px;
-  width: 90px;
+  width: 200px;
   cursor: pointer;
   border: none;
   color: white;
@@ -180,4 +155,7 @@ button:hover {
 section.about{
   height: 100vh;
   width: 100%;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  ;
 }
