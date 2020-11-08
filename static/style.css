@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+nav{
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 0px;
+  display: none;
+
+}
+@keyframes hide{
+  0%{
+    
+    opacity: 1;
+    background: rgb(0,0,121);
+  box-shadow: 0px 5px 5px rgba(255,255,255,0.5);
+    line-height: auto;
+    height: 10vh;
+    display: flex;
+    padding: auto;
+    margin: auto;
+  }
+  75%{
+    background: rgb(0, 0, 121);
+  box-shadow: 0px 5px 5px rgba(255,255,255,0.5);
+    opacity: 1;
+    line-height: 0px;
+    height: 0px;
+    display: flex;
+    padding: 0px;
+    margin:auto;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+    line-height: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: auto;
+  }
+}
+.navbar-hidden{
+  animation-name:hide ;
+  animation-duration: 1s;
+animation-fill-mode: forwards;
+  margin-top: -10vh;
+  height: 10vh;
+  display: none;
+}
+@keyframes show{
+  0%{
+    opacity: 0;
+    display: none;
+    line-height: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: auto;
+  }
+  75%{
+    background: rgb(0, 0, 121);
+  box-shadow: 0px 5px 5px rgba(255,255,255,0.5);
+    opacity: 1;
+    line-height: 0px;
+    height: 0px;
+    display: flex;
+    padding: 0px;
+    margin:auto;
+  }
+  100%{
+    opacity: 1;
+    background: rgb(0,0,121);
+  box-shadow: 0px 5px 5px rgba(255,255,255,0.5);
+    line-height: auto;
+    height: 10vh;
+    display: flex;
+    padding: auto;
+    margin: auto;
+  }
+}
+.sticky{
+  height: 10vh;
+  width: 100%;
+  margin: auto;
+  color: black;
+  background: transparent;
+ animation-name: show;
+ animation-duration: 1s;
+ animation-fill-mode: ease;
+  display: flex;
+  
+  background: rgb(0, 0, 121);
+  box-shadow: 0px 10px 10px rgba(255,255,255,0.5);
+  position: sticky;
+  top: 0;
+  align-items: center;
+}
+ul{
+align-items: center;
+display: flex;
+height: 100%;
+width: 70%;
+justify-content: space-around;
+align-items: center;
+list-style: none;
+}
+li{
+  flex: 1;
+}
+section.home {
+  background-image: url("./anastasia-nero-_WxmxTqlXw4-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  
+  width: 100%;
+}
+.profile-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px blue solid;
+  margin: 20px 20px;
+  transform: rotate(-15deg);
+  box-shadow: 5px 5px 5px black;
+}
+.name-logo {
+  height: 80%;
+  width: auto;
+  bottom: 0;
+  position: absolute;
+  left: 10%;
+}
+.name-txt {
+  font-size: 60px;
+  position: absolute;
+  right: 5%;
+  top: 40%;
+  color: black;
+}
+.hero {
+  font-size: 31px;
+  position: absolute;
+  right: 5%;
+  top: 60%;
+  color: rgb(255, 255, 255);
+}
+button {
+  background: rgb(0, 0, 129);
+  position: absolute;
+  right: 10%;
+  top: 80%;
+  height: 40px;
+  width: 90px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  animation-fill-mode: both;
+  font-size: 20px;
+  transition-duration: 0.5s;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+button:hover {
+  box-shadow: rgb(161, 161, 161) 2px 2px 5px;
+}
+section.about{
+  height: 100vh;
+  width: 100%;
+}
