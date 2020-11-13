@@ -12,50 +12,37 @@
     <link rel="stylesheet" href="./static/style.css" />
     <link rel="stylesheet" href="./static/all.min.css" />
   </head>
+
   <body>
-    <nav >
+    <div class="sticky">
+      <div class="menu">
+        <hr id="menu" />
+        <hr id="menu" />
+        <hr id="menu" />
+      </div>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <a class="nav" href="#home"> <li>Home</li></a>
+        <a class="nav" href="#about"> <li>About</li></a>
+        <a class="nav" href="#skills"> <li>Skills</li></a>
+        <a class="nav" href="#projects"> <li>Projects</li></a>
+        <a class="nav" href="#contact"> <li>Contact</li></a>
       </ul>
-    </nav>
-    <section class="home">
+    </div>
+
+    <section id="home">
       <img src="./static/profile.jpg" class="profile-image" alt="" />
-      <svg
-        class="name-logo"
-        viewBox="0 0 887 680"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M357.755 2.04858H444.03L563.5 680H471L357.755 2.04858Z"
-          fill="black"
-        />
-        <path d="M788.229 0H886.084L563.5 677H475L788.229 0Z" fill="black" />
-        <path d="M357.881 0H444.156L108.642 680H0L357.881 0Z" fill="black" />
-        <rect x="227" y="352" width="229" height="75" fill="black" />
-      </svg>
-      <p data-aos="zoom-in-down" data-aos-duration="1000" class="name-txt">
-        Hello I'm Akash.
+      <p class="name">Hi, I'm Akash.</p>
+      <p class="hero">
+        Need a coder? <br />
+        You're at right place. <br>
+        I make web and make it work. <br />
+        I love what I do.
       </p>
-      <p data-aos="zoom-in-up" data-aos-duration="1000" class="hero">
-        I Love What I Do. <br />
-        I design web and make it work.
-      </p>
-      <a href="mailto:plyby171@gmail.com">
-        <button class="animate__animated animate__backInRight">
-          Book For Yourself. <i class="fas fa-arrow-right"></i></button
-      ></a>
     </section>
-    <section class="about">
-      
-    </section>
-    <section class="skills"></section>
-    <section class="projects"></section>
-    <section class="contact"></section>
+    <section id="about"></section>
+    <section id="skills"></section>
+    <section id="projects"></section>
+    <section id="contact"></section>
     <script src="./static/all.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./static/script.js"></script>
