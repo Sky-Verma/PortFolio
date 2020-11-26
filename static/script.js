@@ -6,12 +6,35 @@ menu[1].addEventListener("click", function (e) {
     rows[1].style.opacity = 0;
     rows[0].id = "cross1";
     rows[2].id = "cross2";
+    document.querySelector('ul').className='';
+    var a=document.querySelectorAll('a');
+    a[0].setAttribute('href','#home');
+    a[1].setAttribute('href','#skills');
+    a[2].setAttribute('href','#projects');
+    a[3].setAttribute('href','#contact');
+    a[4].setAttribute('href','#about');
+    a[0].setAttribute('class','');
+    a[1].setAttribute('class','');
+    a[2].setAttribute('class','');
+    a[3].setAttribute('class','');
+    a[4].setAttribute('class','');
   } else {
+    document.querySelector('ul').className='absolute';
+    var a=document.querySelectorAll('a');
+    a[0].setAttribute('href','');
+    a[1].setAttribute('href','');
+    a[2].setAttribute('href','');
+    a[3].setAttribute('href','');
+    a[4].setAttribute('href','');
+    a[0].setAttribute('class','absolute');
+    a[1].setAttribute('class','absolute');
+    a[2].setAttribute('class','absolute');
+    a[3].setAttribute('class','absolute');
+    a[4].setAttribute('class','absolute');
     rows[1].style.opacity = 1;
     rows[0].id = "menu";
     rows[2].id = "menu";
   }
-  
 });
 
 window.onscroll=function(){
