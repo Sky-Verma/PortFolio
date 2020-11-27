@@ -49,14 +49,14 @@ section#home {
 .name {
   position: absolute;
   left: 5%;
-  top: 30%;
+  top: 65%;
   font-size: 50px;
   transform: translateY(-50%);
 }
 .hero {
   position: absolute;
   left: 5%;
-  top: 65%;
+  top: 85%;
   color: black;
   font-weight: bolder;
   font-size: 30px;
@@ -125,6 +125,38 @@ a:focus{
   top: 5px;
   opacity: 0;
   left: 5px;
-  
   z-index: -1;
+}
+#about{
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  padding: 30px;}
+.about-info{
+  font-size: 300px;
+  opacity: 0.2;
+  position: absolute;
+  top: 130vh;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.about-me{
+  position: absolute;
+  top: 120vh;
+  font-size: 40px;
+  color: black;
+  word-spacing: 5px;
+  line-height: 50px;
+}
+.programmer{
+  color: rgb(150, 9, 9);
+}
+.skills-info{
+  font-size: 300px;
+  opacity: 0.1;
+  position: absolute;
+  top: 230vh;
+  left: 10%;
+  transform: translateY(-50%);
+}
+#skills{
+  background-image: linear-gradient(to top,#330867  0%,#30cfd0  100%);
 }

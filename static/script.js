@@ -9,15 +9,15 @@ menu[1].addEventListener("click", function (e) {
     document.querySelector('ul').className='';
     var a=document.querySelectorAll('a');
     a[0].setAttribute('href','#home');
-    a[1].setAttribute('href','#skills');
-    a[2].setAttribute('href','#projects');
-    a[3].setAttribute('href','#contact');
-    a[4].setAttribute('href','#about');
-    a[0].setAttribute('class','');
-    a[1].setAttribute('class','');
-    a[2].setAttribute('class','');
-    a[3].setAttribute('class','');
-    a[4].setAttribute('class','');
+    a[1].setAttribute('href','#about');
+    a[2].setAttribute('href','#skills');
+    a[3].setAttribute('href','#projects');
+    a[4].setAttribute('href','#contact');
+    a[0].setAttribute('class','home');
+    a[1].setAttribute('class','about');
+    a[2].setAttribute('class','skills');
+    a[3].setAttribute('class','projects');
+    a[4].setAttribute('class','contact');
   } else {
     document.querySelector('ul').className='absolute';
     var a=document.querySelectorAll('a');
