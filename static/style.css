@@ -74,6 +74,7 @@ section#home {
   margin-top: -10vh;
   z-index: 1;
   left: 5vw;
+  background: aqua;
   display: flex;
   height: 10vh;
   width: 100%;
@@ -187,7 +188,7 @@ a:focus {
 }
 .skills-info {
   font-size: 300px;
-  opacity: 0.2;
+  opacity: 0.3;
   position: absolute;
   top: 230vh;
   left: 10%;
@@ -197,20 +198,19 @@ a:focus {
 #skills {
   background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .box-html,
 .box-javascript,
 .box-django,
 .box-css {
   height: 60vh;
-  width: 300px;
+  width: 20%;
   box-shadow: 20px 20px 20px rgb(0, 0, 0);
-  position: relative;
-  left: -10vw;
-  top: 20%;
-  transform: translatex(50%);
   margin: 25px;
   background: rgb(0, 0, 0);
+  opacity: 0.8;
 }
 .js-ring {
   height: 168px;
@@ -221,3 +221,25 @@ a:focus {
   margin-top: -95px;
   margin-left: 120px;
 }
+.lang-JS {
+  margin-top: -95px;
+  margin-left: 100px;
+}
+#projects {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #330867 0%, #30cfd0 100%);
+  align-items: center;
+}
+.project-box {
+  height: 80%;
+  width: 80%;
+}
+.project-image {
+  height: 100%;
+  width: 100%;
+}
+#contact {
+  background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
+}
+

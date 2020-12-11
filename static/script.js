@@ -4,6 +4,9 @@ menu[1].addEventListener("click", function (e) {
 
   if (rows[0].id == "menu") {
     rows[1].style.opacity = 0;
+    document.querySelector(
+      
+    )
     rows[0].id = "cross1";
     rows[2].id = "cross2";
     document.querySelector("ul").className = "";
