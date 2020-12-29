@@ -20,13 +20,6 @@ section#home {
   background-attachment: fixed;
   background-size: cover;
 }
-.profile_image::before {
-  content: "";
-  border: 3px solid blue;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-}
 .profile-image {
   height: 70vh;
   position: absolute;
@@ -57,13 +50,14 @@ section#home {
   left: 5%;
   top: 65%;
   font-size: 50px;
+  color: rgb(0, 0, 0);
   transform: translateY(-50%);
 }
 .hero {
   position: absolute;
   left: 5%;
   top: 85%;
-  color: black;
+  color: rgb(255, 249, 249);
   font-weight: bolder;
   font-size: 30px;
   transform: translateY(-50%);
@@ -245,6 +239,10 @@ a:focus {
 }
 #contact {
   background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
 }
 
 .project-info {
@@ -270,4 +268,32 @@ transform: translateY(-50%);
   height: 40vh;
   width: 40vw;
 
+}
+.map:hover{
+  height: 300px;
+  width: 200px;
+}
+
+.instagram,.facebook,.whatsapp{
+  height: 350px;
+  width: 200px;
+  opacity: 0.5;
+  box-shadow:10px 10px 10px rgba(0, 162, 255, 0.562);
+  justify-content: center;
+  display: flex;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  background: rgb(255, 196, 0);
+}
+.location{
+  height: 350px;
+  width: 200px;
+  opacity: 0.5;
+  box-shadow:10px 10px 10px rgba(0, 162, 255, 0.562);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  background: rgb(255, 196, 0);
 }

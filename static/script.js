@@ -53,28 +53,25 @@ document.querySelector('.project_image').addEventListener('mouseout',function(){
   document.querySelector('.project_image').className="project-image";
   document.querySelector('.project_text').className='project-text';
 })
-if(document.querySelector('#about').scrollY>0){
-  document.querySelector('title').textContent='Akash Verma | About';
-  document.querySelector('.about-info').textContent='Not';
-  console.log('Running...');
-}
 var a = document.querySelectorAll("a");
-for(var i=0;i<=a.length;i++){
+for(var i=0;i<a.length;i++){
   a[i].addEventListener('click',function(){
-    
     document.querySelector("ul").className = "absolute";
-    a[0].setAttribute("href", "");
-    a[1].setAttribute("href", "");
-    a[2].setAttribute("href", "");
-    a[3].setAttribute("href", "");
-    a[4].setAttribute("href", "");
-    a[0].setAttribute("class", "absolute");
-    a[1].setAttribute("class", "absolute");
-    a[2].setAttribute("class", "absolute");
-    a[3].setAttribute("class", "absolute");
-    a[4].setAttribute("class", "absolute");
+    a[i].setAttribute("href", "");
+    a[i].setAttribute("class", "absolute");
+    var rows = document.querySelectorAll("hr");
     rows[1].style.opacity = 1;
     rows[0].id = "menu";
     rows[2].id = "menu";
   })
+}
+
+function initMap() {
+  
+  var mub = { lat: 31.76082, lng: 76.006267 };
+  
+  var map = new google.maps.Map(
+      document.querySelector('.map'), { zoom: 15, center: mub });
+ 
+  var marker = new google.maps.Marker({ position: mub, map: map });
 }
