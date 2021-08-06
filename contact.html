@@ -82,11 +82,13 @@
             var mapwidth = map.clientWidth;
             var margin = (window.innerWidth - mapwidth) / 2 + 'px';
             map.style.marginLeft = margin;
+            map.style.translateX = -margin;
             window.onresize = (e) => {
                 var map = document.querySelector('.map');
                 var mapwidth = map.clientWidth;
                 var margin = (window.innerWidth - mapwidth) / 2 + 'px';
                 map.style.marginLeft = margin;
+                map.style.translateX = -margin;
             };
         };
     </script>
